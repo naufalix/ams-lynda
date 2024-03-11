@@ -1,0 +1,100 @@
+body {
+    align-items: center;
+    background: #fff;
+    color: #222 !important;
+    display: flex;
+    justify-content: center;
+}
+.bg::before {
+    content: '';
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:100%;
+    width:100%;
+}
+.container {
+    max-width: 360px;
+    padding: 0;
+}
+.card-panel {
+    padding: 30px;
+}
+.card-panel,
+button,
+#alert-message {
+    border-radius: 4px !important;
+}
+.logo {
+    max-width: 130px;
+    height: auto;
+}
+.app-name {
+    line-height: 1.4;
+    margin: 15px 0 0;
+}
+.org-name {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+.line {
+    border-bottom: 1px dotted #555;
+    margin: 20px auto 15px;
+}
+#alert-message {
+    border-radius: 3px;
+    color: #f44336 ;
+    margin: -15px 0 20px;
+    padding: 10px;
+}
+form {
+    margin-top: 35px;
+}
+.input-field label{
+    left: 0;
+}
+button {
+    display: block;
+    font-size: 1.25rem;
+    margin: 0;
+    width: 100%;
+}
+.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-transform: translate3d(0, -50px, 0);
+    -ms-transform: translate3d(0, -50px, 0);
+    transform: translate3d(0, -50px, 0);
+    -webkit-transition: -webkit-transform .5s ease-out;
+    -ms-transition: -webkit-transform .5s ease-out;
+    transition: transform .5s ease-out;
+}
+.pace.pace-active {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.pace .pace-progress {
+    display: block;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 3px;
+    background: #2196f3;
+    pointer-events: none;
+}
